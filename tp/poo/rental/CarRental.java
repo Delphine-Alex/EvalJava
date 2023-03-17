@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 public class CarRental {
 
@@ -49,9 +50,8 @@ public class CarRental {
         return toSellVehicules;
     }
 
-    /*public findACarByModel(String model){
-        for (int i = 0; i < DeadLine; i++) {
+    /*public Car findACarByModel(String model) {
 
-        }
+        return null;
     }*/
 }

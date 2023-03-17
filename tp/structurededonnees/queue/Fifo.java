@@ -1,5 +1,7 @@
 package tp.structurededonnees.queue;
 
+import java.util.Arrays;
+
 public class Fifo {
 
     private Object[] objects;
@@ -19,13 +21,14 @@ public class Fifo {
 
     public void offer(Object object) {
         if (object == null) {
-            throw new IllegalArgumentException("Cannot add null object to the queue");
-        }
-        if ((tail + 1) == head) {
+            throw new NullPointerException("Cannot add null object to the queue");
+        } else if (tail == objects.length) {
             throw new IllegalStateException("Queue is full");
+        } else {
+            objects[tail] = object;
+            tail++;
         }
-        objects[tail] = object;
-        tail++;
+
     }
 
     public Object peek() {
@@ -55,4 +58,16 @@ public class Fifo {
         }
     }
 
+    public String toString() {
+        if (isEmpty()) {
+            return "[]";
+        } else {
+            String result = "[" + objects[head];
+            for (int i = head + 1; i < tail; i++) {
+                result += ", " + objects[i];
+            }
+            result += "]";
+            return result;
+        }
+    }
 }

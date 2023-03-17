@@ -1,5 +1,7 @@
 package tp.structurededonnees.queue;
 
+import static org.junit.Assert.assertEquals;
+
 public class Main {
 
     public static void main(String[] args){
@@ -24,9 +26,7 @@ public class Main {
 
         Object bool = fifo.isEmpty();
         System.out.println(bool);
-        // fifo.offer("test09");
-        // fifo.offer("test10");
-        // fifo.offer(null);
         System.out.println(fifo.size());
+
     }
 }

@@ -1,5 +1,11 @@
 package tp.poo.rental;
 
+import java.time.LocalDate;
+import java.util.List;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class Main {
 
     public static void main(String[] args){

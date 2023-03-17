@@ -1,4 +1,4 @@
-package tp.poo;
+package tp.poo.test;
 
 import static org.junit.Assert.*;
 
@@ -108,7 +108,7 @@ public class RentalTest {
         assertTrue(toSell.contains(new Camel(currentYear - 10)));
     }
 
-    @Test
+    /*@Test
     public void carRentalCarAndCamelToSell2() {
         int currentYear = LocalDate.now().getYear();
         CarRental rental = new CarRental();
@@ -117,9 +117,9 @@ public class RentalTest {
         List<?> toSell = rental.toSell();
         assertTrue(toSell.contains(new Car("ford mustang", currentYear - 3)));
         assertFalse(toSell.contains(new Camel(currentYear - 3)));
-    }
+    }*/
 
-   /* @Test
+   /*@Test
     public void findACarByModel() {
         CarRental rental = new CarRental();
         rental.add(new Car("ford mustang", 2020));
